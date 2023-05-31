@@ -5,6 +5,7 @@
         <title>Loan Prediction</title>
 </head>
 <body>
+<h1>     Loan Application Pre-Check</h1>
         <form action="{{ url_for('predict')}}" method="POST">
                 Credit_History:   <input type="number" name="credit_history"></br>
                 Applicant_Income:    <input type="number" name="applicant_income"></br>
@@ -13,6 +14,6 @@
 
                 <input type=submit value=Submit>
         </form>
-         My final prediction: {{ predict }}
+          <p style= "color: green;">My final prediction: {{ predict }} </p>
 </body>
 </html>
