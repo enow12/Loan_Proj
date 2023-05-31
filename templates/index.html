@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charsets="UTF-8">
+        <title>Loan Prediction</title>
+</head>
+<body>
+        <form action="{{ url_for('predict')}}" method="POST">
+                Credit_History:   <input type="number" name="credit_history"></br>
+                Applicant_Income:    <input type="number" name="applicant_income"></br>
+                Loan_Amount:   <input type="number" name="loan_amount"></br>
+                Coapplicant_Income:    <input type="number" name="coapplicant_income"></br>
+
+                <input type=submit value=Submit>
+        </form>
+         My final prediction: {{ predict }}
+</body>
+</html>
